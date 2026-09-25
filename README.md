@@ -63,11 +63,26 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .\activate.ps1
 
 ```
+or
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/slgunasekara/ToolBox-Activator/refs/heads/main/ToolBox-Activator-main/activate.ps1" -OutFile "activate.ps1"
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\activate.ps1
+
+```
 
 #### **macOS / Linux (Bash)**
 
 ```bash
 curl -o activate.sh https://raw.githubusercontent.com/neKamita/toolbox-activator/main/activate.sh
+chmod +x activate.sh
+./activate.sh
+
+```
+or
+
+```bash
+curl -o activate.sh https://raw.githubusercontent.com/slgunasekara/ToolBox-Activator/refs/heads/main/ToolBox-Activator-main/activate.sh
 chmod +x activate.sh
 ./activate.sh
 
